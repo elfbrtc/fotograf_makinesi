@@ -1,0 +1,26 @@
+<% if user_signed_in? %>
+    <%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<% end %>
+
+<div class="wrapper bgded overlay" style="background-image:url('<%= image_path(@oyun.resim)%>');">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading"><strong><%= @oyun.isim %></strong></h6>
+    </div>
+    <div class="group" id="ozel">
+        
+          <div style="height:600px" class="second_half ">
+        <p></p>
+        <p></p>
+        <p align="center" class="btmspace-30" ><%= @oyun.aciklama %></p>
+        <footer><a class="btn" href="#">Read More »</a></footer>
+      </div>
+   
+   
+     
+      
+    <!-- ################################################################################################ --> 
+  </section>
+</div>
+<div class="clear"></div>

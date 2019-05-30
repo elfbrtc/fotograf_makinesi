@@ -1,0 +1,19 @@
+<%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isim:</strong>
+  <%= @oyun.isim %>
+</p>
+
+<p>
+  <strong>Aciklama:</strong>
+  <%= @oyun.aciklama %>
+</p>
+
+<p>
+    <%= image_tag @oyun.resim.url(:medium) if @oyun.resim? %> 
+</p>
+
+<%= link_to 'Duzenle', edit_oyun_path(@oyun) %> |
+<%= link_to 'Geri', oyuns_path %>

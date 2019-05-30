@@ -1,0 +1,2 @@
+module OnTaraf::OyundetayHelper
+end
