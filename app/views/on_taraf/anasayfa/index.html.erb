@@ -2,15 +2,9 @@
     <%= render partial: "layouts/shared/arka_taraf/navbar" %>
 <% end %>
 
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!-- main body --> 
-    <!-- ################################################################################################ -->
-    
-            
-     
-    <ul class="nospace group">
-        <% sayac = 0  %>
+		<div class="container-fluid pt70 pb70">
+			<div id="fh5co-projects-feed" class="fh5co-projects-feed clearfix masonry">
+				   <% sayac = 0  %>
     <% @oyunlar.each do |oyun| %>
     <% if sayac%3 == 0 %>
     </ul>
@@ -31,8 +25,7 @@
       </li>
     <% sayac += 1  %>
     <% end %>
-      
-    </ul>
-    <div class="clear"></div>
-  </main>
-</div>
+			</div>
+			<!--END .fh5co-projects-feed-->
+		</div>
+		</div>

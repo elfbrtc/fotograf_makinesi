@@ -14673,3 +14673,66 @@ Processing by OnTaraf::AnasayfaController#index as HTML
 Completed 200 OK in 60ms (Views: 51.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:50:23 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:8
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (28.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 3821ms (Views: 3810.6ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-05-30 17:50:45 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mIN3dY8/FgYcHcOWqiMNqsflOibYMsf9AzVEDTqXzii6Mvh0OIDlZoVZzkCtLrRRDWYv4qhMIWGhB+IN/dscdQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:50:46 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:8
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:51:09 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:8
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/on_taraf/oyundetay/index?id=7" for 127.0.0.1 at 2019-05-30 17:51:31 +0000
+Processing by OnTaraf::OyundetayController#index as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOyun Load (0.4ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/on_taraf/oyundetay_controller.rb:3
+  Rendering on_taraf/oyundetay/index.html.erb within layouts/application
+  Rendered on_taraf/oyundetay/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
