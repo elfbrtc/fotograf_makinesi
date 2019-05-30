@@ -13612,3 +13612,1064 @@ Processing by OnTaraf::AnasayfaController#index as HTML
 Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.5ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-05-30 16:26:54 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  [1m[36mOyun Load (0.3ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (33.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 796ms (Views: 784.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 16:28:34 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:29:55 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.9ms)
+  Rendered admin/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:30:02 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  [1m[36mOyun Load (0.3ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 16:31:54 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.6ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 16:31:59 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:31:59 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.1ms)
+  Rendered admin/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 16:32:04 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:32:04 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.3ms)
+  Rendered admin/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:32:12 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.9ms)
+  Rendered admin/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:32:27 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.1ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?sayfayi_yenile=true" for 127.0.0.1 at 2019-05-30 16:32:29 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Parameters: {"sayfayi_yenile"=>"true"}
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.1ms)
+  [1m[36mOyun Load (0.3ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?sayfayi_yenile=true" for 127.0.0.1 at 2019-05-30 16:32:31 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Parameters: {"sayfayi_yenile"=>"true"}
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:32:34 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (4.4ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2019-05-30 16:32:39 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (32.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:32:46 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.0ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.5ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:32:54 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (3.0ms)
+  Rendered admin/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:35:54 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.5ms)
+  Rendered admin/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:35:56 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (8.9ms)
+  Rendered admin/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.5ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 128.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/panel" for 127.0.0.1 at 2019-05-30 16:36:02 +0000
+Processing by AdminController#index as HTML
+  Rendering admin/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.2ms)
+  Rendered admin/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:36:05 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oyuns/6/edit" for 127.0.0.1 at 2019-05-30 16:36:52 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered oyuns/_form.html.erb (13.2ms)
+  Rendered oyuns/edit.html.erb within layouts/application (16.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/6" for 127.0.0.1 at 2019-05-30 16:37:46 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VMQ/X7vDk33FHC+pA3coE+LCYltAyXKnTz7k0kjkid4FOWo8VL07gSiJByPx2oskIWpcQhsZ+RHJavGXmBB0+Q==", "oyun"=>{"isim"=>"Nikon D850", "aciklama"=>"Full frame 45.7MP görüntü sensörüyle donatılan D850, 153 noktalı otomatik odaklama sistemiyle geliyor. Burst modunda saniyede 7 kare kaydedebilen kameranın öne çıkan özellikleri arasında, geniş ISO aralığı, 4K video kaydı, optik vizör, LCD ekran, çift kart yuvası, Bluetooth ve Wi-Fi yer alıyor. Kamerada dahili flaş bulunmuyor. Nikon D850, çözünürlük, görüntü kalitesi, hızlı çekim ve tasarımıyla yılın en başarılı SLR kamera modeli.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d1da00b8 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-1mtjjbi.jpg>, @original_filename="Nikon-D850.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Nikon-D850.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"6"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-1mtjjbi.jpg to /tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg
+[paperclip] Trying to link /tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg to /tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-1c9d457.jpg
+Command :: file -b --mime '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-1c9d457.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]'
+Command :: convert '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]' -auto-orient -resize "300x300>" '/tmp/2baf274e7917c98bc88f22c989c671f720190530-2498-1i7eulq'
+[paperclip] Trying to link /tmp/2baf274e7917c98bc88f22c989c671f720190530-2498-1i7eulq to /tmp/37e82ba48f468c098b55d1b32af8f59f20190530-2498-1mjww99
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]'
+Command :: convert '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg[0]' -auto-orient -resize "100x100>" '/tmp/2baf274e7917c98bc88f22c989c671f720190530-2498-ksa8oh'
+[paperclip] Trying to link /tmp/2baf274e7917c98bc88f22c989c671f720190530-2498-ksa8oh to /tmp/2c1b074edabc1af0039659df6a40b92e20190530-2498-66w03x
+[paperclip] Trying to link /tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-h4c7he.jpg to /tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-1m25nj9.jpg
+Command :: file -b --mime '/tmp/bcb5f33787cfc53f7990a3e4d346983520190530-2498-1m25nj9.jpg'
+  [1m[36mOyun Update (1.3ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Nikon D850"], ["aciklama", "Full frame 45.7MP görüntü sensörüyle donatılan D850, 153 noktalı otomatik odaklama sistemiyle geliyor. Burst modunda saniyede 7 kare kaydedebilen kameranın öne çıkan özellikleri arasında, geniş ISO aralığı, 4K video kaydı, optik vizör, LCD ekran, çift kart yuvası, Bluetooth ve Wi-Fi yer alıyor. Kamerada dahili flaş bulunmuyor. Nikon D850, çözünürlük, görüntü kalitesi, hızlı çekim ve tasarımıyla yılın en başarılı SLR kamera modeli."], ["resim_file_name", "Nikon-D850.jpg"], ["resim_file_size", 231362], ["resim_updated_at", "2019-05-30 16:37:46.998380"], ["updated_at", "2019-05-30 16:37:47.290201"], ["id", 6]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/006/original/sonycybershotdschxvdijitalfotorafmakinesi_21214906.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/006/medium/sonycybershotdschxvdijitalfotorafmakinesi_21214906.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/006/thumb/sonycybershotdschxvdijitalfotorafmakinesi_21214906.jpg
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/6
+Completed 302 Found in 314ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/oyuns/6" for 127.0.0.1 at 2019-05-30 16:37:47 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:37:59 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns/7/edit" for 127.0.0.1 at 2019-05-30 16:38:02 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered oyuns/_form.html.erb (2.3ms)
+  Rendered oyuns/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 45.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/7" for 127.0.0.1 at 2019-05-30 16:38:44 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ST7Itgsspzuy1z4zifix40qUhpDOvGekPc+NSayRkGHytScULDVYTyYt856vokcsG8fwO010c4lmKAt1kPFH1Q==", "oyun"=>{"isim"=>"Sony a7 III", "aciklama"=>"Sony a7 III, 24MP çözünürlüğündeki Full frame BSI sensörü kullanıyor. Saniyede 10 kare görüntü kaydedebilen kamera, 5 eksenli stabilizasyon, 4K HDR video kaydı, sessiz çekim, LCD ekran, çift sd kart yuvası, geliştirilmiş batarya ve odak joystiği gibi özelliklerle geliyor.  a7 III’ün ekranı değişken açılı değil ve kart yuvalarından sadece biri UHS-II destekliyor. Kamerada dahili flaş bulunmuyor. Timelapse görüntü kaydedebilmek için ekstra aksesuarlara ihtiyaç duyuyor. Menü sistemi de biraz karışık. Sony a7 III, mükemmel görüntü kalitesi ve 4K video yakalama özellikleriyle, temel özelliklerinin çok ötesine geçen giriş seviyesi full frame fotoğraf makinesi.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d1a82a48 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-vsbh8w.jpg>, @original_filename="Sony-a7-III.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Sony-a7-III.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"7"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-vsbh8w.jpg to /tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg
+[paperclip] Trying to link /tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg to /tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-z1ey55.jpg
+Command :: file -b --mime '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-z1ey55.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]'
+Command :: convert '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]' -auto-orient -resize "300x300>" '/tmp/f8ff27ea3d64006d10fd945a25665eab20190530-2498-j7pp4i'
+[paperclip] Trying to link /tmp/f8ff27ea3d64006d10fd945a25665eab20190530-2498-j7pp4i to /tmp/8ecad0647fbc59edcfc868620531d8f120190530-2498-bu0vjc
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]'
+Command :: convert '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg[0]' -auto-orient -resize "100x100>" '/tmp/f8ff27ea3d64006d10fd945a25665eab20190530-2498-1hgoy2o'
+[paperclip] Trying to link /tmp/f8ff27ea3d64006d10fd945a25665eab20190530-2498-1hgoy2o to /tmp/e996e493ed4d5f03f5cdeb550aad8ea720190530-2498-119l4es
+[paperclip] Trying to link /tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-qkd7ki.jpg to /tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-1oatx1b.jpg
+Command :: file -b --mime '/tmp/790b9bfe3a9f50cb5f38b689fa47f5be20190530-2498-1oatx1b.jpg'
+  [1m[36mOyun Update (0.7ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Sony a7 III"], ["aciklama", "Sony a7 III, 24MP çözünürlüğündeki Full frame BSI sensörü kullanıyor. Saniyede 10 kare görüntü kaydedebilen kamera, 5 eksenli stabilizasyon, 4K HDR video kaydı, sessiz çekim, LCD ekran, çift sd kart yuvası, geliştirilmiş batarya ve odak joystiği gibi özelliklerle geliyor.  a7 III’ün ekranı değişken açılı değil ve kart yuvalarından sadece biri UHS-II destekliyor. Kamerada dahili flaş bulunmuyor. Timelapse görüntü kaydedebilmek için ekstra aksesuarlara ihtiyaç duyuyor. Menü sistemi de biraz karışık. Sony a7 III, mükemmel görüntü kalitesi ve 4K video yakalama özellikleriyle, temel özelliklerinin çok ötesine geçen giriş seviyesi full frame fotoğraf makinesi."], ["resim_file_name", "Sony-a7-III.jpg"], ["resim_file_size", 247129], ["resim_updated_at", "2019-05-30 16:38:44.384595"], ["updated_at", "2019-05-30 16:38:44.506699"], ["id", 7]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/007/original/kremali-mantarli-tavuk-mukemmel-lezzet.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/007/medium/kremali-mantarli-tavuk-mukemmel-lezzet.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/007/thumb/kremali-mantarli-tavuk-mukemmel-lezzet.jpg
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/7
+Completed 302 Found in 145ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/oyuns/7" for 127.0.0.1 at 2019-05-30 16:38:44 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.5ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:38:51 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.8ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 81.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oyuns/8/edit" for 127.0.0.1 at 2019-05-30 16:39:00 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOyun Load (0.3ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.3ms)
+  Rendered oyuns/_form.html.erb (4.2ms)
+  Rendered oyuns/edit.html.erb within layouts/application (9.0ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/oyuns/8" for 127.0.0.1 at 2019-05-30 16:42:29 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kak9pu6crLkYcwVk/bCC0+RMY7+KENl5A5VgvYpy7yX3+Hpfj3HaE7gFBe7bPU+YPg4wtrmRCPevlOluoTX6wA==", "oyun"=>{"isim"=>"Fujifilm X-H1", "aciklama"=>"Fujifilm X-H1, elektronik obtüratörlü, 8fps hızında ve mekanik kapaklı yapısıyla saniyede 14 kare yakalayabiliyor. 5 eksenli stabilizasyon sensörüyle donatılan kamerada, 24MP APS-C sensörü, 200Mbps 4K video çekimi, video profil günlüğü, hareketli LCD ekran, çift kart yuvası, monochrome bilgi ekranı ve suya karşı dayanıklı gövde bulunuyor. Kameranı fiyatı maalesef oldukça pahalı. Kamerada dahili flaş ve kulaklık bağlantısı bulunmuyor. Video kaydı esnasında batarya çabucak tükeniyor. Fujifilm X-H1, hem fotoğrafçılar hem de video ile uğraşanlar için bir çok başarılı özellikler sunuyor.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d2722348 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-rsz602.jpg>, @original_filename="Fujifilm-X-H1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Fujifilm-X-H1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"8"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-rsz602.jpg to /tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg
+[paperclip] Trying to link /tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg to /tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-1g9rz0x.jpg
+Command :: file -b --mime '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-1g9rz0x.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]'
+Command :: convert '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]' -auto-orient -resize "300x300>" '/tmp/d036be523aff35eb0231ec93b767631f20190530-2498-13gwyd6'
+[paperclip] Trying to link /tmp/d036be523aff35eb0231ec93b767631f20190530-2498-13gwyd6 to /tmp/72e60827036624a913eb166a3d84389620190530-2498-1rqyta
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]'
+Command :: convert '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg[0]' -auto-orient -resize "100x100>" '/tmp/d036be523aff35eb0231ec93b767631f20190530-2498-6yzgf'
+[paperclip] Trying to link /tmp/d036be523aff35eb0231ec93b767631f20190530-2498-6yzgf to /tmp/9764941ad96c75e4de899ded65693e3120190530-2498-cg1jb8
+[paperclip] Trying to link /tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-3u9iai.jpg to /tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-1hm8xvg.jpg
+Command :: file -b --mime '/tmp/613da77981f624034ad14a4ceaf42f7120190530-2498-1hm8xvg.jpg'
+  [1m[36mOyun Update (0.5ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Fujifilm X-H1"], ["aciklama", "Fujifilm X-H1, elektronik obtüratörlü, 8fps hızında ve mekanik kapaklı yapısıyla saniyede 14 kare yakalayabiliyor. 5 eksenli stabilizasyon sensörüyle donatılan kamerada, 24MP APS-C sensörü, 200Mbps 4K video çekimi, video profil günlüğü, hareketli LCD ekran, çift kart yuvası, monochrome bilgi ekranı ve suya karşı dayanıklı gövde bulunuyor. Kameranı fiyatı maalesef oldukça pahalı. Kamerada dahili flaş ve kulaklık bağlantısı bulunmuyor. Video kaydı esnasında batarya çabucak tükeniyor. Fujifilm X-H1, hem fotoğrafçılar hem de video ile uğraşanlar için bir çok başarılı özellikler sunuyor."], ["resim_file_name", "Fujifilm-X-H1.jpg"], ["resim_file_size", 210057], ["resim_updated_at", "2019-05-30 16:42:29.421868"], ["updated_at", "2019-05-30 16:42:29.551054"], ["id", 8]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/008/original/yumu.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/008/medium/yumu.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/008/thumb/yumu.jpg
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/8
+Completed 302 Found in 154ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/oyuns/8" for 127.0.0.1 at 2019-05-30 16:42:29 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:43:12 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/oyuns/9/edit" for 127.0.0.1 at 2019-05-30 16:43:21 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered oyuns/_form.html.erb (2.1ms)
+  Rendered oyuns/edit.html.erb within layouts/application (4.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/9" for 127.0.0.1 at 2019-05-30 16:44:24 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8nv6DIhSHxM/5YMD4dIX0WuIuyG5DhvvQAASSTpXnEUNFy/jikYBgU/T+K341e78sa1k+iSQNl6utWMy2gncBQ==", "oyun"=>{"isim"=>"Nikon D500", "aciklama"=>"Nikon D500 sağlam yapısıyla dikkatleri üzerine toplamayı başarıyor. Gelişmiş, uçtan uca otofokus sistemiyle donatılan kamera, saniyede 10 kare yakalamanızı sağlıyor. Yüksek ISO görüntü kalitesi, HDMI çıkışı, kolay kontrol düzeni, hareketli LCD ekran, toz ve hava koşullarına dayanıklı tasarım , XQD ve SD kart yuvalarıyla D500 fark yaratmayı başarıyor. Kameranın kablosuz aktarım işlevi biraz çalışma istiyor. 4K video kayıtlarında görüntünün kırpıldığını görebilirsiniz. Dahili flaş yok. Nikon D500, şirketin başarılı otofokus sistemini kompakt SLR gövdesine taşıyarak, meraklıları ve profesyonelleri de memnun edecek özellikler sunuyor.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d1a8ce58 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-se779e.jpg>, @original_filename="Nikon-D500.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Nikon-D500.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"9"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-se779e.jpg to /tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg
+[paperclip] Trying to link /tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg to /tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-1a0i7f7.jpg
+Command :: file -b --mime '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-1a0i7f7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]'
+Command :: convert '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]' -auto-orient -resize "300x300>" '/tmp/592b43df922cff0879e8f3e63432edf620190530-2498-sktirs'
+[paperclip] Trying to link /tmp/592b43df922cff0879e8f3e63432edf620190530-2498-sktirs to /tmp/63459e9a7e68789627d1dd173d2cbcd120190530-2498-1smfwkh
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]'
+Command :: convert '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg[0]' -auto-orient -resize "100x100>" '/tmp/592b43df922cff0879e8f3e63432edf620190530-2498-1jhaxsr'
+[paperclip] Trying to link /tmp/592b43df922cff0879e8f3e63432edf620190530-2498-1jhaxsr to /tmp/588eae3ef8a1cbed804af8f451ea9b8d20190530-2498-1l9k5kg
+[paperclip] Trying to link /tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-xx3nnq.jpg to /tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-11giu3p.jpg
+Command :: file -b --mime '/tmp/0ed9fa93b8c0260adf61adfa28bc1b6e20190530-2498-11giu3p.jpg'
+  [1m[36mOyun Update (0.4ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Nikon D500"], ["aciklama", "Nikon D500 sağlam yapısıyla dikkatleri üzerine toplamayı başarıyor. Gelişmiş, uçtan uca otofokus sistemiyle donatılan kamera, saniyede 10 kare yakalamanızı sağlıyor. Yüksek ISO görüntü kalitesi, HDMI çıkışı, kolay kontrol düzeni, hareketli LCD ekran, toz ve hava koşullarına dayanıklı tasarım , XQD ve SD kart yuvalarıyla D500 fark yaratmayı başarıyor. Kameranın kablosuz aktarım işlevi biraz çalışma istiyor. 4K video kayıtlarında görüntünün kırpıldığını görebilirsiniz. Dahili flaş yok. Nikon D500, şirketin başarılı otofokus sistemini kompakt SLR gövdesine taşıyarak, meraklıları ve profesyonelleri de memnun edecek özellikler sunuyor."], ["resim_file_name", "Nikon-D500.jpg"], ["resim_file_size", 197781], ["resim_updated_at", "2019-05-30 16:44:24.335263"], ["updated_at", "2019-05-30 16:44:24.471680"], ["id", 9]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/009/original/sirin.jpeg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/009/medium/sirin.jpeg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/009/thumb/sirin.jpeg
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/9
+Completed 302 Found in 162ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/oyuns/9" for 127.0.0.1 at 2019-05-30 16:44:24 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:44:30 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.1ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns/10/edit" for 127.0.0.1 at 2019-05-30 16:44:38 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.1ms)
+  Rendered oyuns/_form.html.erb (3.5ms)
+  Rendered oyuns/edit.html.erb within layouts/application (7.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/10" for 127.0.0.1 at 2019-05-30 16:45:28 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hDzA/CgWckTDUohcZmiU9MCNCbAzSlgfXvr+J4cmOC9pnffrYyYYBPLvYxEpzpRquzSAlRs3J6o4x+aBbuWZBA==", "oyun"=>{"isim"=>"Sony Alpha 6000", "aciklama"=>"Alpha 6000, İnanılmaz derecede hızlı otomatik odaklama özelliğiyle dikkat çekiyor. Saniyede 11 kare yakalayabilen kamera, yüksek ISO görüntü kalitesi, keskin OLED vizörü, hareketli ekranı, NFC ve Wi-Fi özelliklerini kullanıcılarına sunuyor. Kamerada dahili flaş ve hot shoe kızağı bulunuyor. Gövde içi flaş ve çok fonksiyonlu hot shoe sayesinde farklı ekipmanları üzerine bağlayabilirsiniz.  Ayrıca kameraya uygulama indirebilirsiniz. Kameranın göz sensörü aşırı hassas Analog mikrofon girişi bulunmuyor ve bazı uygulamaları satın alınmak zorunda kalabilirsiniz. Sony Alpha 6000 anında netleme yapıyor ve 11.1 fps hızında çekim yapabiliyor. Görüntü kalitesi ve hızıyla tüm kamera meraklılarını etkileyecek performans sunuyor.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d19820d0 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-1c5tv1z.jpg>, @original_filename="Sony-Alpha-6000.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Sony-Alpha-6000.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"10"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-1c5tv1z.jpg to /tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg
+[paperclip] Trying to link /tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg to /tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-13rvve5.jpg
+Command :: file -b --mime '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-13rvve5.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]'
+Command :: convert '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]' -auto-orient -resize "300x300>" '/tmp/4b32e3a339eb66746b688ec930d8491d20190530-2498-ea0n78'
+[paperclip] Trying to link /tmp/4b32e3a339eb66746b688ec930d8491d20190530-2498-ea0n78 to /tmp/b37c7d80b43680add735e883ca432c7020190530-2498-1om6wtp
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]'
+Command :: convert '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg[0]' -auto-orient -resize "100x100>" '/tmp/4b32e3a339eb66746b688ec930d8491d20190530-2498-50p6wl'
+[paperclip] Trying to link /tmp/4b32e3a339eb66746b688ec930d8491d20190530-2498-50p6wl to /tmp/f17f5c9798d90cc816013d5e1f74211520190530-2498-17v0hk3
+[paperclip] Trying to link /tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-320j7x.jpg to /tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-1c7nszf.jpg
+Command :: file -b --mime '/tmp/25d34dfb531ed7928edc679aed5f73a120190530-2498-1c7nszf.jpg'
+  [1m[36mOyun Update (0.4ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Sony Alpha 6000"], ["aciklama", "Alpha 6000, İnanılmaz derecede hızlı otomatik odaklama özelliğiyle dikkat çekiyor. Saniyede 11 kare yakalayabilen kamera, yüksek ISO görüntü kalitesi, keskin OLED vizörü, hareketli ekranı, NFC ve Wi-Fi özelliklerini kullanıcılarına sunuyor. Kamerada dahili flaş ve hot shoe kızağı bulunuyor. Gövde içi flaş ve çok fonksiyonlu hot shoe sayesinde farklı ekipmanları üzerine bağlayabilirsiniz.  Ayrıca kameraya uygulama indirebilirsiniz. Kameranın göz sensörü aşırı hassas Analog mikrofon girişi bulunmuyor ve bazı uygulamaları satın alınmak zorunda kalabilirsiniz. Sony Alpha 6000 anında netleme yapıyor ve 11.1 fps hızında çekim yapabiliyor. Görüntü kalitesi ve hızıyla tüm kamera meraklılarını etkileyecek performans sunuyor."], ["resim_file_name", "Sony-Alpha-6000.jpg"], ["resim_file_size", 256363], ["resim_updated_at", "2019-05-30 16:45:28.451004"], ["updated_at", "2019-05-30 16:45:28.584556"], ["id", 10]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/010/original/bamya.jpeg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/010/medium/bamya.jpeg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/010/thumb/bamya.jpeg
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/10
+Completed 302 Found in 158ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/oyuns/10" for 127.0.0.1 at 2019-05-30 16:45:28 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.9ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:45:34 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.0ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.5ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns/11/edit" for 127.0.0.1 at 2019-05-30 16:45:40 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.9ms)
+  Rendered oyuns/_form.html.erb (3.0ms)
+  Rendered oyuns/edit.html.erb within layouts/application (6.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 57.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/11" for 127.0.0.1 at 2019-05-30 16:46:42 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1uFMzY/dDSQX9NIAylzpB4FJnhlrvasDzBgSC7z8xfmmjBMDhXbeZ9ha4t6KVj4fmZCeO6DEgix9eeOu6VcMiQ==", "oyun"=>{"isim"=>"Sony Cyber-shot DSC-RX100 III", "aciklama"=>"DSC-RX100 III, yüksek ISO performansı, 1 inç boyutundaki görüntü sensörü, net ve geniş diyafram aralığı sunan lensi ve saniyede 10 kare çekim yapabilmesiyle kompak kamera standartlarını yeniden tanımlıyor. Kameranın özelleştirilebilir kontrolleri, büyük LCD ekranı, açılabilir OLED vizörü, hızlı odaklama sistemi, NFC ve Wi-Fi bağlantı özellikleri fotoğraf çekme deneyimini kolaylaştırıyor. Kameranın dezavantajı maalesef fiyatı. Bunun yanı sıra, hot shoe ve harici şarj cihazının olmamasını da eksik özellikler arasına ekleyebiliriz. Sony Cyber-shot DSC-RX100 III, yüksek fiyatına rağmen görüntü kalitesi ve mükemmel EVF vizörüyle, şuan alabileceğiniz en yetenekli kompak fotoğraf makinesi.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4b0008728 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-1tfvtqi.jpg>, @original_filename="Sony-Cyber-shot-DSC-RX100-III.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Sony-Cyber-shot-DSC-RX100-III.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"11"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-1tfvtqi.jpg to /tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg
+[paperclip] Trying to link /tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg to /tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-109hm08.jpg
+Command :: file -b --mime '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-109hm08.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]'
+Command :: convert '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]' -auto-orient -resize "300x300>" '/tmp/e064ea07a34ab72153f118afc73fbcec20190530-2498-1j6yl8u'
+[paperclip] Trying to link /tmp/e064ea07a34ab72153f118afc73fbcec20190530-2498-1j6yl8u to /tmp/0d49904c63ec43a6a7fe2fe4b184fdbc20190530-2498-1ugv2fl
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]'
+Command :: convert '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg[0]' -auto-orient -resize "100x100>" '/tmp/e064ea07a34ab72153f118afc73fbcec20190530-2498-ht9d95'
+[paperclip] Trying to link /tmp/e064ea07a34ab72153f118afc73fbcec20190530-2498-ht9d95 to /tmp/e272c4e369337e30b57899b0ce8b2d6f20190530-2498-1q9t1s8
+[paperclip] Trying to link /tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-a15mmn.jpg to /tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-18su342.jpg
+Command :: file -b --mime '/tmp/1db9d77a3935b33ba9389f5a5dbabcd620190530-2498-18su342.jpg'
+  [1m[36mOyun Update (0.3ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Sony Cyber-shot DSC-RX100 III"], ["aciklama", "DSC-RX100 III, yüksek ISO performansı, 1 inç boyutundaki görüntü sensörü, net ve geniş diyafram aralığı sunan lensi ve saniyede 10 kare çekim yapabilmesiyle kompak kamera standartlarını yeniden tanımlıyor. Kameranın özelleştirilebilir kontrolleri, büyük LCD ekranı, açılabilir OLED vizörü, hızlı odaklama sistemi, NFC ve Wi-Fi bağlantı özellikleri fotoğraf çekme deneyimini kolaylaştırıyor. Kameranın dezavantajı maalesef fiyatı. Bunun yanı sıra, hot shoe ve harici şarj cihazının olmamasını da eksik özellikler arasına ekleyebiliriz. Sony Cyber-shot DSC-RX100 III, yüksek fiyatına rağmen görüntü kalitesi ve mükemmel EVF vizörüyle, şuan alabileceğiniz en yetenekli kompak fotoğraf makinesi."], ["resim_file_name", "Sony-Cyber-shot-DSC-RX100-III.jpg"], ["resim_file_size", 111179], ["resim_updated_at", "2019-05-30 16:46:42.514292"], ["updated_at", "2019-05-30 16:46:42.637954"], ["id", 11]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/011/original/arab-asi.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/011/medium/arab-asi.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/011/thumb/arab-asi.jpg
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/11
+Completed 302 Found in 144ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/oyuns/11" for 127.0.0.1 at 2019-05-30 16:46:43 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.8ms)
+  Rendered oyuns/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:46:51 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.0ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns/12/edit" for 127.0.0.1 at 2019-05-30 16:46:55 +0000
+Processing by OyunsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered oyuns/_form.html.erb (2.2ms)
+  Rendered oyuns/edit.html.erb within layouts/application (4.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/oyuns/12" for 127.0.0.1 at 2019-05-30 16:47:41 +0000
+Processing by OyunsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ThBVuMjsC13OKgzfHUTPSnX6kuMwdwBLs8eTWwN2FRjN/LknGsh2OnrhtJxl+SUA0H8HWo9IoKiJJGdowTqh/A==", "oyun"=>{"isim"=>"Canon EOS 800D", "aciklama"=>"EOS 800D, 24MP çözünürlüğünde APS-C görüntü sensörü. 45 noktalı çapraz tip otomatik odaklama sistemi, saniyede 6 kare çekebilme, canlı görünümde çift piksellik AF, değişken açılı LCD ekran ve Wi-Fi özellikleriyle donatılmış. Maalesef video kaydı 1080p ile sınırlandırılmış durumda. Canon’un EOS 800D modeli, hem standart hem de canlı görünüm modlarında gelişmiş otomatik odaklama sistemiyle, eski model sahiplerine yükseltme yapmak için zorlayıcı bir sebep sunuyor.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4c82ab4b8 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-1nfg4km.jpg>, @original_filename="Canon-EOS-800D.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Canon-EOS-800D.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update Oyun", "id"=>"12"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-1nfg4km.jpg to /tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg
+[paperclip] Trying to link /tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg to /tmp/8aa7f32f65a973806369d373221f660b20190530-2498-l8xnhy.jpg
+Command :: file -b --mime '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-l8xnhy.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]'
+Command :: convert '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]' -auto-orient -resize "300x300>" '/tmp/4559853bfd03c5ac68766886374c1ab020190530-2498-egsafi'
+[paperclip] Trying to link /tmp/4559853bfd03c5ac68766886374c1ab020190530-2498-egsafi to /tmp/b41925fa4cd159b7a4a71842f33db57220190530-2498-1h13bkf
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]'
+Command :: convert '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg[0]' -auto-orient -resize "100x100>" '/tmp/4559853bfd03c5ac68766886374c1ab020190530-2498-x7pu6a'
+[paperclip] Trying to link /tmp/4559853bfd03c5ac68766886374c1ab020190530-2498-x7pu6a to /tmp/778736294cdc79ee97f0d5e19b7092ec20190530-2498-10chrg8
+[paperclip] Trying to link /tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1nrxbhj.jpg to /tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1fs7g06.jpg
+Command :: file -b --mime '/tmp/8aa7f32f65a973806369d373221f660b20190530-2498-1fs7g06.jpg'
+  [1m[36mOyun Update (0.3ms)[0m  [1m[33mUPDATE "oyuns" SET "isim" = ?, "aciklama" = ?, "resim_file_name" = ?, "resim_file_size" = ?, "resim_updated_at" = ?, "updated_at" = ? WHERE "oyuns"."id" = ?[0m  [["isim", "Canon EOS 800D"], ["aciklama", "EOS 800D, 24MP çözünürlüğünde APS-C görüntü sensörü. 45 noktalı çapraz tip otomatik odaklama sistemi, saniyede 6 kare çekebilme, canlı görünümde çift piksellik AF, değişken açılı LCD ekran ve Wi-Fi özellikleriyle donatılmış. Maalesef video kaydı 1080p ile sınırlandırılmış durumda. Canon’un EOS 800D modeli, hem standart hem de canlı görünüm modlarında gelişmiş otomatik odaklama sistemiyle, eski model sahiplerine yükseltme yapmak için zorlayıcı bir sebep sunuyor."], ["resim_file_name", "Canon-EOS-800D.jpg"], ["resim_file_size", 279354], ["resim_updated_at", "2019-05-30 16:47:41.291930"], ["updated_at", "2019-05-30 16:47:41.421228"], ["id", 12]]
+  ↳ app/controllers/oyuns_controller.rb:44
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/012/original/hamsi-kusu.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/012/medium/hamsi-kusu.jpg
+[paperclip] deleting /home/ubuntu/fotograf_makinesi/public/system/oyuns/resims/000/000/012/thumb/hamsi-kusu.jpg
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:44
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/12
+Completed 302 Found in 153ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/oyuns/12" for 127.0.0.1 at 2019-05-30 16:47:41 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.1ms)
+  Rendered oyuns/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:47:45 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.1ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/oyuns/new" for 127.0.0.1 at 2019-05-30 16:47:56 +0000
+Processing by OyunsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering oyuns/new.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered oyuns/_form.html.erb (2.1ms)
+  Rendered oyuns/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/oyuns" for 127.0.0.1 at 2019-05-30 16:48:47 +0000
+Processing by OyunsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rFRbGAqg3y1BkjSAwkGnGSPqcTA1xlYAmQeLdKN7RIN7ivsjuiWq22QcuA3SpvpG6yrildOQRrLZTDykmLTkWw==", "oyun"=>{"isim"=>"Canon PowerShot Elph 190 IS", "aciklama"=>"PowerShot Elph 190 IS kompak kamera almayı düşünenlere zengin içerik ve uygun fiyat sunuluyor. Kamera, 10x zum objektifi, optik stabilizasyon, NFC, Wi-Fi ve üç farklı renk seçeneğiyle geliyor. Video kaydı 720p ile sınırlı durumda. ISO performansının ortalamanın üzerinde olduğunu söyleyebiliriz. LCD ekranın çözünürlüğü düşük. Canon PowerShot Elph 190 IS, daha pahalı kameralar kadar özellik sunmasa da, uygun fiyatlı kompak fotoğraf makinesi almak isteyenler için en iyi seçimlerden biri olduğunu söyleyebiliriz.", "resim"=>#<ActionDispatch::Http::UploadedFile:0x00007fd4d16808f0 @tempfile=#<Tempfile:/tmp/RackMultipart20190530-2498-19e4uxx.jpg>, @original_filename="Canon-PowerShot-Elph-190-IS.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"oyun[resim]\"; filename=\"Canon-PowerShot-Elph-190-IS.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Oyun"}
+[paperclip] Trying to link /tmp/RackMultipart20190530-2498-19e4uxx.jpg to /tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg
+[paperclip] Trying to link /tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg to /tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-1sjz0e2.jpg
+Command :: file -b --mime '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-1sjz0e2.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]'
+Command :: convert '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]' -auto-orient -resize "300x300>" '/tmp/e9653ee96fbbe71665297c1996aed7ae20190530-2498-1h2vqjx'
+[paperclip] Trying to link /tmp/e9653ee96fbbe71665297c1996aed7ae20190530-2498-1h2vqjx to /tmp/a8708c7c69b0158d9cedb62de69d3d2b20190530-2498-1x0n3iv
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]'
+Command :: convert '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg[0]' -auto-orient -resize "100x100>" '/tmp/e9653ee96fbbe71665297c1996aed7ae20190530-2498-1yq0px9'
+[paperclip] Trying to link /tmp/e9653ee96fbbe71665297c1996aed7ae20190530-2498-1yq0px9 to /tmp/8f53f49ab98a1e0ae3aaeba691c04f3920190530-2498-1ddbn3i
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:30
+[paperclip] Trying to link /tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-rttx9y.jpg to /tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-ojbw3q.jpg
+Command :: file -b --mime '/tmp/c809120e7895cd8b7ea08e77135535bb20190530-2498-ojbw3q.jpg'
+  [1m[36mOyun Create (0.3ms)[0m  [1m[32mINSERT INTO "oyuns" ("isim", "aciklama", "created_at", "updated_at", "resim_file_name", "resim_content_type", "resim_file_size", "resim_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["isim", "Canon PowerShot Elph 190 IS"], ["aciklama", "PowerShot Elph 190 IS kompak kamera almayı düşünenlere zengin içerik ve uygun fiyat sunuluyor. Kamera, 10x zum objektifi, optik stabilizasyon, NFC, Wi-Fi ve üç farklı renk seçeneğiyle geliyor. Video kaydı 720p ile sınırlı durumda. ISO performansının ortalamanın üzerinde olduğunu söyleyebiliriz. LCD ekranın çözünürlüğü düşük. Canon PowerShot Elph 190 IS, daha pahalı kameralar kadar özellik sunmasa da, uygun fiyatlı kompak fotoğraf makinesi almak isteyenler için en iyi seçimlerden biri olduğunu söyleyebiliriz."], ["created_at", "2019-05-30 16:48:47.494988"], ["updated_at", "2019-05-30 16:48:47.494988"], ["resim_file_name", "Canon-PowerShot-Elph-190-IS.jpg"], ["resim_content_type", "image/jpeg"], ["resim_file_size", 152495], ["resim_updated_at", "2019-05-30 16:48:47.367239"]]
+  ↳ app/controllers/oyuns_controller.rb:30
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/oyuns_controller.rb:30
+Redirected to https://localhost-elif-barut-u-1.paiza-user.cloud:3000/oyuns/13
+Completed 302 Found in 148ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/oyuns/13" for 127.0.0.1 at 2019-05-30 16:48:47 +0000
+Processing by OyunsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/oyuns_controller.rb:67
+  Rendering oyuns/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.9ms)
+  Rendered oyuns/show.html.erb within layouts/application (5.7ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/oyuns" for 127.0.0.1 at 2019-05-30 16:48:51 +0000
+Processing by OyunsController#index as HTML
+  Rendering oyuns/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/shared/arka_taraf/_navbar.html.erb:9
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (2.8ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/oyuns/index.html.erb:17
+  Rendered oyuns/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?sayfayi_yenile=true" for 127.0.0.1 at 2019-05-30 16:50:02 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Parameters: {"sayfayi_yenile"=>"true"}
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/on_taraf/oyundetay/index?id=12" for 127.0.0.1 at 2019-05-30 16:50:10 +0000
+Processing by OnTaraf::OyundetayController#index as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/on_taraf/oyundetay_controller.rb:3
+  Rendering on_taraf/oyundetay/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/oyundetay/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered on_taraf/oyundetay/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/on_taraf/oyundetay/index?id=12" for 127.0.0.1 at 2019-05-30 16:50:17 +0000
+Processing by OnTaraf::OyundetayController#index as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT  "oyuns".* FROM "oyuns" WHERE "oyuns"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/on_taraf/oyundetay_controller.rb:3
+  Rendering on_taraf/oyundetay/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/oyundetay/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  Rendered on_taraf/oyundetay/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?sayfayi_yenile=true" for 127.0.0.1 at 2019-05-30 16:50:22 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Parameters: {"sayfayi_yenile"=>"true"}
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.2ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2019-05-30 16:50:24 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/?sayfayi_yenile=true" for 127.0.0.1 at 2019-05-30 16:50:32 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Parameters: {"sayfayi_yenile"=>"true"}
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:02:38 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (22.3ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 316ms (Views: 305.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:02:43 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (1.0ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/on_taraf/anasayfa/index.html" for 127.0.0.1 at 2019-05-30 17:06:35 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.7ms)
+  [1m[36mOyun Load (0.3ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.4ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 64.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/on_taraf/anasayfa/index.html" for 127.0.0.1 at 2019-05-30 17:06:37 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.6ms)
+  [1m[36mOyun Load (0.1ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-05-30 17:22:44 +0000
+Processing by OnTaraf::AnasayfaController#index as HTML
+  Rendering on_taraf/anasayfa/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:1
+  Rendered layouts/shared/arka_taraf/_navbar.html.erb (0.8ms)
+  [1m[36mOyun Load (0.2ms)[0m  [1m[34mSELECT "oyuns".* FROM "oyuns"[0m
+  ↳ app/views/on_taraf/anasayfa/index.html.erb:14
+  Rendered on_taraf/anasayfa/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/shared/on_taraf/_header.html.erb (0.3ms)
+  Rendered layouts/shared/on_taraf/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+

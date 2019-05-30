@@ -16,12 +16,12 @@
   <tbody>
     <% @oyuns.each do |oyun| %>
       <tr>
-        <td><%= oyun.isim %></td>
-        <td><%= oyun.aciklama %></td>
-        <td><%= image_tag oyun.resim.url(:thumb) if oyun.resim? %> </td>
-        <td><%= link_to 'İncele', oyun %></td>
+        <td><%= makine.isim %></td>
+        <td><%= makine.aciklama %></td>
+        <td><%= image_tag makine.resim.url(:thumb) if oyun.resim? %> </td>
+        <td><%= link_to 'İncele', makine %></td>
         <td><%= link_to 'Duzenle', edit_oyun_path(oyun) %></td>
-        <td><%= link_to 'Sil', oyun, method: :delete, data: { confirm: 'Emin misin?' } %></td>
+        <td><%= link_to 'Sil', makine, method: :delete, data: { confirm: 'Emin misin?' } %></td>
       </tr>
     <% end %>
   </tbody>
